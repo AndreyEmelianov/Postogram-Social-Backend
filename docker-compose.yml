@@ -8,7 +8,7 @@ services:
     depends_on:
       - db
     environment:
-      DATABASE_URL: 'mongodb://admin:admin@db:27018/mydatabase?authSource=admin&directConnection=true'
+      DATABASE_URL: 'mongodb://admin:admin@localhost:27018/mydatabase?authSource=admin&directConnection=true'
 
   db:
     image: prismagraphql/mongo-single-replica:5.0.3
